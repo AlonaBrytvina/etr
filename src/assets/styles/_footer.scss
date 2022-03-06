@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--main-bg-color);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    line-height: 21px;
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 400;
+    a {
+      color: var(--secondary-bg-color);
+      transition: 0.3s;
+      &:hover {
+        color: #6a51ad;
+      }
+    }
+  }
+}

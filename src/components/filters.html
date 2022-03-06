@@ -1,0 +1,195 @@
+<section class="filters">
+    <div class="filters__container container">
+        <div class="filters__row">
+            <div class="filters__item" id="filter-dev">
+                <div class="filters__select-block">
+                    <span class="filters__select-label"> Dev </span>
+                    <div class="filters__select select">
+                        <div class="select__main-row">
+                            <span id="select__value" class="select__value">All People</span>
+                            <img
+                                    class="select__arrow"
+                                    src="img/arrow.svg"
+                                    alt="arrow"
+                            />
+                        </div>
+                        <ul class="select__options">
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-all-people"
+                                                class="select__checkbox"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-all-people"
+                                        >
+                                            All People
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-design"
+                                                class="select__checkbox select__main-cat"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-design"
+                                        >
+                                            Design
+                                        </label>
+                                    </div>
+                                    <div class="select__more">
+                                        <img
+                                                class="select__checkbox--arrow"
+                                                src="img/arrow.svg"
+                                                alt="arrow"
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="select__developers"></ul>
+                            </li>
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-front-end"
+                                                class="select__checkbox select__main-cat"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-front-end"
+                                        >
+                                            Front-End
+                                        </label>
+                                    </div>
+                                    <div class="select__more">
+                                        <img
+                                                class="select__checkbox--arrow"
+                                                src="img/arrow.svg"
+                                                alt="arrow"
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="select__developers"></ul>
+                            </li>
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-back-end"
+                                                class="select__checkbox select__main-cat"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-back-end"
+                                        >
+                                            Back-End
+                                        </label>
+                                    </div>
+                                    <div class="select__more">
+                                        <img
+                                                class="select__checkbox--arrow"
+                                                src="img/arrow.svg"
+                                                alt="arrow"
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="select__developers"></ul>
+                            </li>
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-pm"
+                                                class="select__checkbox select__main-cat"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-pm"
+                                        >
+                                            PM’s
+                                        </label>
+                                    </div>
+                                    <div class="select__more">
+                                        <img
+                                                class="select__checkbox--arrow"
+                                                src="img/arrow.svg"
+                                                alt="arrow"
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="select__developers"></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="filters__item">
+                <div class="filters__select-block">
+                    <span class="filters__select-label"> Status </span>
+                    <div class="filters__select select select__z-index">
+                        <div class="select__main-row">
+                            <span class="select__value" id="select__status">
+                              All Statuses
+                            </span>
+                            <img
+                                    class="select__arrow"
+                                    src="img/arrow.svg"
+                                    alt="arrow"
+                            />
+                        </div>
+                        <ul class="select__options select__options--width">
+                            <li class="select__view filter-status">
+                                <span class="select__checkbox-label">All Statuses</span>
+                            </li>
+                            <li class="select__view filter-status">
+                                <span class="select__checkbox-label">Completed</span>
+                            </li>
+                            <li class="select__view filter-status">
+                                <span class="select__checkbox-label">Not Completed</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="filters__item">
+                <div class="filters__efficiency-block">
+                    <input
+                            type="checkbox"
+                            id="filters__efficiency-checkbox"
+                            class="filters__efficiency-checkbox"
+                            checked
+                    />
+                    <label
+                            class="filters__efficiency-label"
+                            for="filters__efficiency-checkbox"
+                    >
+                        Show Efficiency
+                    </label>
+                </div>
+            </div>
+            <div class="filters__item">
+                <button class="filters__button-apply button">Apply</button>
+            </div>
+            <div class="filters__item">
+                <button class="filters__button-reset button">Reset Filters</button>
+            </div>
+        </div>
+    </div>
+</section>

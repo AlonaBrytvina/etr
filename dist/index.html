@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Reporting</title>
+
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+<link rel="stylesheet" href="css/style.min.css" />
+
+<script src="js/app.min.js" defer></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+    <div class="header__row container">
+        <a href="#" class="header__logo">
+            <img src="img/mainLogo.svg" alt="employee time" />
+        </a>
+        <div class="header__menu menu">
+            <div class="menu__icon icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <img src="img/summary.svg" alt="summary" />
+                            <span>Summary</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <img src="img/timeClock.svg" alt="hours" />
+                            <span>Hours</span>
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--active">
+                        <a href="#" class="menu__link">
+                            <img src="img/pencil.svg" alt="projects" />
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <img src="img/timeReports.svg" alt="time reports" />
+                            <span>Time reports</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <img src="img/confirmation.svg" alt="confirmation" />
+                            <span>Confirmation</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <img src="img/mailer.svg" alt="mailer" />
+                            <span>Mailer</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <img src="img/compare.svg" alt="compare" />
+                            <span>Compare</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__avatar">
+            <div class="header__mode">
+                <img src="img/light-mode.svg" alt="light" />
+            </div>
+            <div class="avatar">
+                <a href="#" class="avatar__link">
+                    <img src="img/avatar.svg" alt="avatar" />
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="page">
+        <section class="filters">
+    <div class="filters__container container">
+        <div class="filters__row">
+            <div class="filters__item" id="filter-dev">
+                <div class="filters__select-block">
+                    <span class="filters__select-label"> Dev </span>
+                    <div class="filters__select select">
+                        <div class="select__main-row">
+                            <span id="select__value" class="select__value">All People</span>
+                            <img
+                                    class="select__arrow"
+                                    src="img/arrow.svg"
+                                    alt="arrow"
+                            />
+                        </div>
+                        <ul class="select__options">
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-all-people"
+                                                class="select__checkbox"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-all-people"
+                                        >
+                                            All People
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-design"
+                                                class="select__checkbox select__main-cat"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-design"
+                                        >
+                                            Design
+                                        </label>
+                                    </div>
+                                    <div class="select__more">
+                                        <img
+                                                class="select__checkbox--arrow"
+                                                src="img/arrow.svg"
+                                                alt="arrow"
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="select__developers"></ul>
+                            </li>
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-front-end"
+                                                class="select__checkbox select__main-cat"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-front-end"
+                                        >
+                                            Front-End
+                                        </label>
+                                    </div>
+                                    <div class="select__more">
+                                        <img
+                                                class="select__checkbox--arrow"
+                                                src="img/arrow.svg"
+                                                alt="arrow"
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="select__developers"></ul>
+                            </li>
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-back-end"
+                                                class="select__checkbox select__main-cat"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-back-end"
+                                        >
+                                            Back-End
+                                        </label>
+                                    </div>
+                                    <div class="select__more">
+                                        <img
+                                                class="select__checkbox--arrow"
+                                                src="img/arrow.svg"
+                                                alt="arrow"
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="select__developers"></ul>
+                            </li>
+                            <li class="select__category">
+                                <div class="select__view">
+                                    <div class="select__category-row">
+                                        <input
+                                                type="checkbox"
+                                                id="select__checkbox-pm"
+                                                class="select__checkbox select__main-cat"
+                                                checked
+                                        />
+                                        <label
+                                                class="select__checkbox-label"
+                                                for="select__checkbox-pm"
+                                        >
+                                            PM’s
+                                        </label>
+                                    </div>
+                                    <div class="select__more">
+                                        <img
+                                                class="select__checkbox--arrow"
+                                                src="img/arrow.svg"
+                                                alt="arrow"
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="select__developers"></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="filters__item">
+                <div class="filters__select-block">
+                    <span class="filters__select-label"> Status </span>
+                    <div class="filters__select select select__z-index">
+                        <div class="select__main-row">
+                            <span class="select__value" id="select__status">
+                              All Statuses
+                            </span>
+                            <img
+                                    class="select__arrow"
+                                    src="img/arrow.svg"
+                                    alt="arrow"
+                            />
+                        </div>
+                        <ul class="select__options select__options--width">
+                            <li class="select__view filter-status">
+                                <span class="select__checkbox-label">All Statuses</span>
+                            </li>
+                            <li class="select__view filter-status">
+                                <span class="select__checkbox-label">Completed</span>
+                            </li>
+                            <li class="select__view filter-status">
+                                <span class="select__checkbox-label">Not Completed</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="filters__item">
+                <div class="filters__efficiency-block">
+                    <input
+                            type="checkbox"
+                            id="filters__efficiency-checkbox"
+                            class="filters__efficiency-checkbox"
+                            checked
+                    />
+                    <label
+                            class="filters__efficiency-label"
+                            for="filters__efficiency-checkbox"
+                    >
+                        Show Efficiency
+                    </label>
+                </div>
+            </div>
+            <div class="filters__item">
+                <button class="filters__button-apply button">Apply</button>
+            </div>
+            <div class="filters__item">
+                <button class="filters__button-reset button">Reset Filters</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="projects">
+    <div class="projects__container container">
+        <div class="projects__row">
+            <div class="projects__col"></div>
+        </div>
+    </div>
+</section>
+
+        <section class="efficiency">
+    <div class="efficiency__container container">
+        <div class="efficiency__body">
+            <div class="efficiency__row">
+                <h3 class="efficiency__title title">Efficiency</h3>
+            </div>
+            <div class="efficiency__row">
+                <div class="efficiency__col efficiency-block">
+                    <p class="efficiency-block__subtitle subtitle">Total Efficiency</p>
+                    <div class="efficiency-block__row">
+                        <p class="efficiency-block__item text-bold text-left">Changes</p>
+                    </div>
+                    <div class="efficiency-block__row">
+                        <p class="efficiency-block__item text-bold">Origin</p>
+                        <p class="efficiency-block__item text-bold">2345.04 h</p>
+                        <p class="efficiency-block__item text-bold">100%</p>
+                    </div>
+                    <div class="efficiency-block__row">
+                        <p class="efficiency-block__item text-bold">Average</p>
+                        <p class="efficiency-block__item text-bold">2345.04 h</p>
+                        <p class="efficiency-block__item text-bold">100%</p>
+                    </div>
+                </div>
+                <div class="efficiency__col efficiency-block">
+                    <p class="efficiency-block__subtitle subtitle">
+                        Efficiency by Current Month (Sep)
+                    </p>
+                    <div class="efficiency-block__row">
+                        <p class="efficiency-block__item text-bold text-left">Changes</p>
+                    </div>
+                    <div class="efficiency-block__row">
+                        <p class="efficiency-block__item text-bold">Origin</p>
+                        <p class="efficiency-block__item text-bold">507.26h</p>
+                        <p class="efficiency-block__item text-bold">100%</p>
+                    </div>
+                    <div class="efficiency-block__row">
+                        <p class="efficiency-block__item text-bold">Average</p>
+                        <p class="efficiency-block__item text-bold">507.26h</p>
+                        <p class="efficiency-block__item text-bold">100%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="tasks">
+    <div class="tasks__container container">
+        <table class="tasks__table table">
+            <thead class="table__head">
+            <tr class="table__row">
+                <th class="table__column-name table__task-name">
+                    <span>Task name</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__developer">
+                    <span>Developer</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__work-type">
+                    <span>Work Type</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__status">
+                    <span>Status</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__estimation">
+                    <span>Estimation (h)</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__total-time">
+                    <span>Total time spent by All </span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__my-time">
+                    <span>My Time spent by Period (h)</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__efficiency">
+                    <span>Efficiency</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+            </tr>
+            </thead>
+            <tbody class="table__body"></tbody>
+        </table>
+        <div class="table__row--separator"></div>
+        <div class="table__row table__row--summ"></div>
+    </div>
+    <div class="container">
+        <div class="tasks__pagination pagination">
+            <p class="pagination__rows-per-page">Rows per page</p>
+            <div class="select select__options--page">
+                <div class="select__main-row">
+                    <span class="select__value" id="select__page">
+                        5
+                    </span>
+                    <img
+                        class="select__arrow"
+                        src="img/arrow.svg"
+                        alt="arrow"
+                    />
+                </div>
+                <ul class="select__options select__options--width-page">
+                    <li class="select__view filter-status per-page">
+                        <span class="select__checkbox-label">5</span>
+                    </li>
+                    <li class="select__view filter-status per-page">
+                        <span class="select__checkbox-label">10</span>
+                    </li>
+                    <li class="select__view filter-status per-page">
+                        <span class="select__checkbox-label">20</span>
+                    </li>
+                </ul>
+            </div>
+            <p class="pagination__count"></p>
+            <div class="pagination__page-number"></div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer class="footer">
+    <div class="footer__container container">
+        <p class="footer__text">
+            2012-2020 © CMS Department of
+            <a href="https://www.facebook.com/nixsolutionsltd/" target="_blank">
+                NIX Solutions Ltd.
+            </a>
+        </p>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
