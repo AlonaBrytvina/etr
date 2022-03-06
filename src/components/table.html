@@ -1,0 +1,75 @@
+<section class="tasks">
+    <div class="tasks__container container">
+        <table class="tasks__table table">
+            <thead class="table__head">
+            <tr class="table__row">
+                <th class="table__column-name table__task-name">
+                    <span>Task name</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__developer">
+                    <span>Developer</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__work-type">
+                    <span>Work Type</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__status">
+                    <span>Status</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__estimation">
+                    <span>Estimation (h)</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__total-time">
+                    <span>Total time spent by All </span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__my-time">
+                    <span>My Time spent by Period (h)</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+                <th class="table__column-name table__efficiency">
+                    <span>Efficiency</span>
+                    <img src="img/sort.svg" alt="sort" />
+                </th>
+            </tr>
+            </thead>
+            <tbody class="table__body"></tbody>
+        </table>
+        <div class="table__row--separator"></div>
+        <div class="table__row table__row--summ"></div>
+    </div>
+    <div class="container">
+        <div class="tasks__pagination pagination">
+            <p class="pagination__rows-per-page">Rows per page</p>
+            <div class="select select__options--page">
+                <div class="select__main-row">
+                    <span class="select__value" id="select__page">
+                        5
+                    </span>
+                    <img
+                        class="select__arrow"
+                        src="img/arrow.svg"
+                        alt="arrow"
+                    />
+                </div>
+                <ul class="select__options select__options--width-page">
+                    <li class="select__view filter-status per-page">
+                        <span class="select__checkbox-label">5</span>
+                    </li>
+                    <li class="select__view filter-status per-page">
+                        <span class="select__checkbox-label">10</span>
+                    </li>
+                    <li class="select__view filter-status per-page">
+                        <span class="select__checkbox-label">20</span>
+                    </li>
+                </ul>
+            </div>
+            <p class="pagination__count"></p>
+            <div class="pagination__page-number"></div>
+        </div>
+    </div>
+</section>
